@@ -1,0 +1,368 @@
+/* general section */
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-colr:#060940;
+    --secound-color:#FC9A71;
+}
+.space {
+    padding: 100px 0;
+}
+.h2-section {
+    text-align: center;
+    color: var(--main-colr);
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.h2-section::before {
+    content: "";
+    width: 100px;
+    height: 15px;
+    border-top: 1px solid var(--main-colr);
+    border-bottom: 1px solid var(--main-colr);
+    position: absolute;
+    top: 70%;
+    transform: translatex(-50%);
+}
+.h2-section::after{
+    content: "";
+    width: 200px;
+    height: 1.5px;
+    background-color: var(--main-colr);
+    position: absolute;
+    top: 76%;
+    transform: translatex(-50%);
+}
+/* end of the general section */
+
+/* start of header section */
+#header {
+    background-color: #050728;
+}
+#header .inner img {
+    max-height: 550px;
+}
+#header .inner1 h2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+#header .inner1 p {
+    font-size: 9px;
+    font-weight: 350;
+    /* margin: 5px 0; */
+}
+#header .inner1 span {
+    color: var(--secound-color);
+}
+#header .icons a {
+    margin: 0 2px;
+    font-size: 12px;
+    color: white;
+    transition: .5 0 all;
+}
+#header .icons a:hover {
+    color: var(--secound-color);
+}
+#header .btn {
+    font-size: 6px;
+    background-color: var(--secound-color);
+    color: var(--main-colr);
+   transition: .5 0 all;
+}
+#header .btn:hover {
+     color: white; 
+}
+.space1 {
+  padding: 100px 0 30px 0;
+}
+ @media screen and (min-width:360px) {
+    #header .inner1 p {
+       margin: 10px 0;
+       font-size: 10px;
+       font-weight: 400;
+    }
+    #header .btn {
+        font-size: 8px;
+    }
+    #header .icons {
+        margin: 10px 0;
+    }
+    #header .icons a {
+        margin: 0 3px; 
+    }
+}
+@media screen and (min-width:390px) {
+    #header .inner1 {
+        margin-top: 30px;
+    }
+    #header .inner1 p {
+        font-size: 11px;
+        font-weight: 400;
+     }
+     #header .btn {
+        font-size: 10px;
+    }
+    #header .icons {
+        margin: 10px 0;
+    }
+}
+@media screen and (min-width:470px) {
+    #header .inner1 h2 {
+        font-size: 16px;
+        font-weight: 500;
+     }
+     #header .btn {
+        font-size: 12px;
+    }
+    #header .icons {
+        margin: 15px 0;
+    }
+    #header .inner1 p {
+        font-size: 12px;
+        font-weight: 400;
+     }
+     #header .icons a { 
+        font-size: 15px;
+     }
+}
+@media screen and (min-width:520px) {
+    #header .inner1 h2 {
+        font-size: 20px;
+     }
+     #header .inner1 p {
+        font-size: 14px;
+        font-weight: 500;
+     }
+     #header .icons a { 
+        font-size: 18px;
+     }
+     #header .btn {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:768px) {
+    #header .inner1 h2 {
+        font-size: 30px;
+     }
+     #header .inner1 p {
+        font-size: 20px;
+        font-weight: 500;
+     }
+     #header .icons a { 
+        font-size: 24px;
+        margin: 0 5px; 
+     }
+     #header .btn {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:992px) {
+    #header .inner1 h2 {
+        font-size: 35px;
+     }
+     #header .inner1 p {
+        font-size: 25px;
+     }
+     #header .icons a { 
+        font-size: 28px;
+        margin: 0 8px; 
+     }
+     #header .btn {
+        font-size: 20px;
+    }
+    #header .inner img {
+        max-height: 500px;
+    }
+    .space1 {
+        padding: 150px 0 50px 0;
+      }
+           
+}
+@media screen and (min-width:1200px){
+    #header .inner1 h2 {
+        font-size: 40px;
+        font-weight: 600;
+     }
+     #header .inner1 p {
+        font-size: 28px;
+     }
+     #header .btn {
+        font-size: 20px;
+    }
+   
+}
+@media screen and (min-width:1400px) {
+    #header .btn {
+        font-size: 22px;
+    }
+    .space1 {
+        padding: 180px 0 60px 0;
+      }
+
+} 
+/* end of header section */
+
+
+/* start of navbar */
+.navbar .navbar-brand {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--main-colr);
+}
+.navbar .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    margin:0 5px;
+    position: relative;
+    color: var(--main-colr);
+}
+@media screen and (min-width:992px) {
+    .navbar .nav-link::after {
+        content: " ";
+        height: 3px;
+        width: 0%;
+        background-color: var(--main-colr);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: .4s all;
+    }
+    .navbar .nav-link:hover::after {
+        width: 100%;
+    }
+}  
+/* end of navbar */
+
+
+
+/* start of about section */
+#about {
+    background-color: rgb(252,154,113,.7);
+}
+
+#about .inner {
+   background-color: #EDF0F2;
+   padding: 50px; 
+}
+#about .inner p {
+    font-size: 18px;
+    font-weight: 400;
+}
+#about .inner {
+    margin: 0 auto;
+}
+@media screen and (min-width:992px) {
+    #about .inner p {
+        font-size: 22px;
+    }
+    #about .inner {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+/* end of about section */
+
+/* start of services section */
+#services {
+    background-color: #EDF0F2;
+}
+#services .inner {
+    background-color: var(--main-colr);
+    color: white;
+    padding: 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#services .inner h3 {
+    color: var(--secound-color);
+}
+#services p {
+    font-size: 18px;
+}
+/* end of services section */
+
+
+
+/* start of experinces section */
+#experinces {
+    background-color: var(--secound-color);
+    color: var(--main-colr);
+}
+#experinces .progress-bar {
+    background-color: var(--main-colr);
+    
+}
+#experinces .prog {
+    background-color: #D9D9D9;
+}
+#experinces h4 {
+    font-size: 22px;
+    font-weight: 350;
+}
+#experinces .experinces p{
+   font-size: 16px;
+   line-height: 1.4;
+}
+@media screen and (min-width:1200px) and (max-width:1400px){
+    #experinces h4 {
+        font-size: 24px; 
+      
+    }
+    #experinces .experinces p {
+        font-size: 17px;
+        font-weight: 350;
+        line-height: 1;
+    }
+    
+}
+@media screen and (min-width:1400px) {
+    #experinces h4 {
+        font-size: 25px; 
+      
+    }
+    #experinces .experinces p {
+        font-size: 18px;
+        font-weight: 350;
+        line-height: 1.1;        
+    }
+}
+/* end of experinces section */
+
+
+
+/* start of projects section */
+#projects{
+ background-color: #d9d9d995; 
+}
+#projects .project:hover{
+    cursor: pointer;
+}
+#projects .project {
+    position: relative;
+}
+#projects .layer {
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transition: .4s all;
+}
+#projects .project:hover .layer {
+    opacity: 1;
+    right: 7px;
+    left: 7px;
+    top: 7px;
+    bottom: 7px;
+}
+/* end of projects section */
+
+/* start of contact section */
+#contact {
+    background-color: var(--main-colr);
+}
+/* end of contact section */
